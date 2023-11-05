@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BSCpE-4A</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js" defer></script>
+    <link href="https://fonts.cdnfonts.com/css/glamor" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="options" id="optionss">
+                <nav class="rightplz">
+                    <ul id="sidemenu">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#topic">PRODUCTS</a></li>
+                        <li><a href="#demo">SCENT MAKERS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="parallax2"></div>
+    <div id="topic">
+        <div class="container">
+            <div class="products-container">
+                <div class="product" data-name="p-1">
+                    <img class="img-fluid" src="product/2.png" alt="">
+                    <h5>VANILLA LACE</h5>
+                </div>
+                <div class="product" data-name="p-2">
+                    <img class="img-fluid" src="product/4.png" alt="">
+                    <h5>BOMBSHELL</h5>
+                </div>
+                <div class="product" data-name="p-3">
+                    <img class="img-fluid" src="product/6.png" alt="">
+                    <h5>STRAWBERRY MILKSHAKE</h5>
+                </div>
+            </div>
+            <div class="products-preview">
+                <div class="preview" id="vl" data-target="p-1">
+                    <i class="fas fa-times"></i>
+                    <div class="stars"></div>
+                    <div class="buttons">
+                        <a href="#" class="buy">ADD TO CART</a>
+                        <a href="#" class="cart">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="preview" id="bs" data-target="p-2">
+                    <i class="fas fa-times"></i>
+                    <div class "stars"></div>
+                    <div class="buttons">
+                        <a href="#" class="buy">ADD TO CART</a>
+                        <a href="#" class="cart">BUY NOW</a>
+                    </div>
+                </div>
+                <div class="preview" id="smilk" data-target="p-3">
+                    <i class="fas fa-times"></i>
+                    <div class="stars"></div>
+                    <div class="buttons">
+                        <a href="#" class="buy">ADD TO CART</a>
+                        <a href="#" class="cart">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"></div>
+    <!---CV--->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="JS/4.png" alt="Image 1" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="JS/5.png" alt="Image 2" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="JS/6.png" alt="Image 3" class="d-block w-100">
+            </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div id="contact" style="background-color: #f8ede3;">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact us</h1>
+                    <div class="social-icons">
+                        <p><i class="fas fa-paper-plane"></i>EMJ-odeur@mail.com</p>
+                        <p><i class="fas fa-mobile-alt"></i> 09123456789</p>
+                        <a href="https://www.facebook.com/JohnRomnick.Sibay/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/RaphaeltoCiel"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
